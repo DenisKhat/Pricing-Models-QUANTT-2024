@@ -1,7 +1,9 @@
 from ib_insync import *
 import pandas as pd
 import os
-
+# IMPLEMENT 1m bar gathering for AMD 2018-2023 inclusive
+# Will need to gather the data per day individually for this to work
+# Use business day library from test file to ensure requests are for valid business days
 
 def main(path, year):
     """
@@ -25,8 +27,8 @@ def main(path, year):
     amdContract = Stock('AMD', 'SMART', 'USD')  # conID=4391
 
     # Request historical stock data
-    amdHistStockData = ib.reqHistoricalData(amdContract, '', '10 Y',
-                                            '1 day', 'MIDPOINT', True)
+    amdHistStockData = ib.reqHistoricalData(amdContract, '', '6 Y',
+                                            '1 min', 'MIDPOINT', True)
     df = util.df(amdHistStockData)
 
     # Drops unneeded columns
