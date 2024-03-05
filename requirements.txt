@@ -1,4 +1,5 @@
 appdirs==1.4.4
+jupyter
 beautifulsoup4==4.12.3
 certifi==2024.2.2
 charset-normalizer==3.3.2
