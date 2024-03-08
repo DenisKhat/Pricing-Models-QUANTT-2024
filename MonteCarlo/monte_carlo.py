@@ -52,7 +52,9 @@ def montecarlo(price, strike, maturity, rfr, volatility, drift, timeSteps=50, si
 
 def montecarlo_rolling(init_price, strike, rfr, sample_returns, timeSteps=30, simulations=5000):
     num_samples = sample_returns.size
-    sample_returns = np.tile(sample_returns, simulations).reshape((num_samples, simulations))
+    sample_returns = np.repeat([sample_returns], simulations, axis=0)
+    sample_returns = sample_returns.transpose()
+    print(sample_returns.shape)
     #sample_returns must be given as a numpy array.
     N = np.sqrt(252) # Conversion param to put variance into correct units.
     dt = 1/252 #length of timeStep, in (trading) years. Using 1 trading day.
@@ -61,11 +63,12 @@ def montecarlo_rolling(init_price, strike, rfr, sample_returns, timeSteps=30, si
     sim_returns = np.zeros((timeSteps,simulations))
 
     prices[0] = init_price
-     
+    
     for time in range(timeSteps):
         returns = np.concatenate((sample_returns, sim_returns[:time]),axis=0)
-        drift = returns.mean() * 252
-        volatility = returns.std() * N
+        drift = returns.mean(axis=0) * 252
+        volatility = returns.std(axis=0) * N
+        # print(volatility[0:2])
         z = np.random.standard_normal(simulations) # array of n standard normal samples.
         prices[time + 1] = prices[time] * np.exp((drift - 0.5 * volatility ** 2) * dt + volatility * np.sqrt(dt) * z)
         sim_returns[time] = (prices[time + 1] / prices[time]) - 1
