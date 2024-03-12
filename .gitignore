@@ -1,5 +1,7 @@
 .venv
 venv
-.data
-Data/
+Data/*
+!Data/stockDailyData.py
+!Data/stockMinuteData.py
+!Data/optionsMinuteData.py
 */.ipynb_checkpoints
