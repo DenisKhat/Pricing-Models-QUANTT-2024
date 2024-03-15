@@ -46,7 +46,7 @@ def main(path, year):
 
 
 if __name__ == "__main__":
-    dataTimeframe = [2019, 2020, 2021, 2022, 2023]
+    stockDataYears = [2019, 2020, 2021, 2022, 2023]
     path = 'AMD Historical Stock Data'
 
     if not os.path.exists(path):

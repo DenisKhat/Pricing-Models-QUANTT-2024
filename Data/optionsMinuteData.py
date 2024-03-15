@@ -18,7 +18,7 @@ pd.set_option('display.max_columns', None)
 def getData(ib, contract, date):
 
     if date < datetime.now():
-        endDateTime = date.strftime("%Y%m%d") + ' 16:15:00'
+        endDateTime = date.strftime("%Y%m%d") + ' 16:10:00'
         optionsData = ib.reqHistoricalData(contract, endDateTime, durationStr='1 D',
                                            barSizeSetting='1 min', whatToShow='MIDPOINT', useRTH=True)
     else:
@@ -122,7 +122,7 @@ if __name__ == "__main__":
                     main(ib, savePath, expirations, strikes, dayDateTime)
                     print("--------------------------------------------------\n\n\n")
             EOD = datetime.strptime(datetime.now().strftime("%Y%m%d") +
-                                    ' 16:15:00', "%Y%m%d %H:%M:%S")
+                                    ' 16:10:00', "%Y%m%d %H:%M:%S")
             if EOD < datetime.now():
                 currentPath = os.path.join(path, datetime.now().strftime("%Y-%m-%d"))
                 print(f"Saving: {datetime.now().strftime("%Y-%m-%d")} data in {currentPath}")
