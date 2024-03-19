@@ -24,3 +24,4 @@ tzdata==2023.4
 urllib3==2.2.0
 webencodings==0.5.1
 yfinance==0.2.36
+holidays~=0.44
