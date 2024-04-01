@@ -8,8 +8,8 @@ params = {
     'r': 0.0535,  # Risk-free rate
     'kappa': 2.0,  # Mean reversion rate
     'theta': 0.04,  # Long-term variance
-    'xi': 0.1,  # Volatility of volatility
-    'rho': -0.7  # Correlation coefficient between asset return and volatility
+    'xi': 0.08548390178333708 ,  # Volatility of volatility
+    'rho': 0.09583035376904195# Correlation coefficient between asset return and volatility
 }
 
 
