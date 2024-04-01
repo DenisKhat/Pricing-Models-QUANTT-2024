@@ -30,7 +30,7 @@ def heston_char_func(u, T, params):
 
 
 # Heston model option price (Fourier transform method, simplified)
-def heston_option_price(T, K, params, call=True, upper_bound=100, limit=100):
+def heston_option_price(T, K, params=params, call=True, upper_bound=100, limit=100):
     S0 = params['S0']
     integrand = lambda u: (np.exp(-1j * u * np.log(K)) * heston_char_func(u - (1j * 0.5), T, params) / (
                 1j * u * heston_char_func(-1j * 0.5, T, params))).real
@@ -45,7 +45,8 @@ def heston_option_price(T, K, params, call=True, upper_bound=100, limit=100):
 
 
 # Example usage
-T = (1*0.1643835616438356)  # Time to maturity
-K = 170  # Strike price
-price_call = heston_option_price(T, K, params, call=True)
-print(f"Call Option Price: {price_call}")
+if __name__ == "__main__":
+    T = (1*0.1643835616438356)  # Time to maturity
+    K = 170  # Strike price
+    price_call = heston_option_price(T, K, params, call=True)
+    print(f"Call Option Price: {price_call}")
