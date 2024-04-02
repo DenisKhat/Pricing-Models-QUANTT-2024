@@ -1,12 +1,14 @@
 # QUANTT Derivatives Pricing — 2023/2024
 
-Welcome to the official repository for the QUANTT 2023-2024 derivatives pricing team. This repository is a comprehensive collection of models, research findings, and insights developed by our team over the course of the year. Our goal is to provide a detailed overview of our approaches to derivatives pricing, the data sources we used, and the performance of our models.
+Welcome to the official repository for the QUANTT 2023-2024 derivatives pricing team. This repository is a comprehensive collection of models, research findings, and insights developed by our team over the course of the year. Our goal is to provide details of our approaches to derivatives pricing, data sources, challenges, and the accuracy and predictions of our models.
 
 ![Banner](https://drive.google.com/uc?export=download&id=1cd3UN4nEdmHOHb9JQiZUovlGWXSpP8kg)
 
 ## Overview
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-Our project aims to explore and develop traditional models for pricing derivatives. Through rigorous research and practical implementation, we strive to enhance the understanding and application of financial models in real-world scenarios.
+Our project aims to explore and develop traditional models for pricing derivatives. Through rigorous research and practical implementation, we strive to enhance our understanding of financial models applied in real-world scenarios.
 
 ## Models
 
