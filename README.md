@@ -2,6 +2,8 @@
 
 Welcome to the official repository for the QUANTT 2023-2024 derivatives pricing team. This repository is a comprehensive collection of models, research findings, and insights developed by our team over the course of the year. Our goal is to provide a detailed overview of our approaches to derivatives pricing, the data sources we used, and the performance of our models.
 
+![Banner](https://drive.google.com/uc?export=download&id=1cd3UN4nEdmHOHb9JQiZUovlGWXSpP8kg)
+
 ## Overview
 
 Our project aims to explore and develop traditional models for pricing derivatives. Through rigorous research and practical implementation, we strive to enhance the understanding and application of financial models in real-world scenarios.
@@ -42,7 +44,7 @@ Our research concentrated on several key areas, including, but not limited to, t
 - If we made predictions solely from our quantitative models, they *essentially* suggest buying most available put permutations on the AMD options chain as it forecasts AMD's stock price to be quite lower than it's current price. Realistically though, there are factors that they cannot take into account. Firstly, Jerome Powell, the chair of the United States Federal Reserve, announced on March 20, 2024 that there are still three interest rate cuts planned for this fiscal year. Further, AMD is *largely* a semiconductor stock, which is apart of a stock group with roughly cyclical movement. Hence, our actual chosen AMD option to purchase would be AMD240920C00230000 (230C for Sept 20, 2024).
 
 ## Team
-| ![Jordan Matus](https://drive.google.com/uc?export=download&id=10W2MP3bC5njRprXSXnp8Ulklym-P9Ylm) | ![Anthony Galassi](https://drive.google.com/uc?export=download&id=1mES6z-Umm8VSRHI8Iq4kJbDVU_NiW1tb) | ![Denis Khatnyuk](https://drive.google.com/uc?export=download&id=1HWRP-iCaaUEYq9M0H1ZBFjVrMRPhHW7c) | ![Owen Martens](https://drive.google.com/uc?export=download&id=1buxXAQyzZheQrh3jZMb-RU9G9MQMYYu0) | ![Jack Switzer](https://drive.google.com/uc?export=download&id=1FG3SKSO3VcWx59bJDKYUPLdZiOelFtpy) | ![Daryan Fadavi](https://drive.google.com/uc?export=download&id=1e1PJ7BapCB87e0_bOHY14W0jI00aHnge) |
+| ![Jordan Matus](https://drive.google.com/uc?export=download&id=1Ucw8tXeEeIzCuUz67dVtSeDBWi382w9z) | ![Anthony Galassi](https://drive.google.com/uc?export=download&id=1KNzJPQauTXHuwcw-eQplb_f1gPE81mHh) | ![Denis Khatnyuk](https://drive.google.com/uc?export=download&id=1zmHMrE9AEOIGz7zXIm16ksioyz2gER6q) | ![Owen Martens](https://drive.google.com/uc?export=download&id=1buxXAQyzZheQrh3jZMb-RU9G9MQMYYu0) | ![Jack Switzer](https://drive.google.com/uc?export=download&id=1VTrLpG2Qcvc54Kdc3PSz2SmBCbZpcld4) | ![Daryan Fadavi](https://drive.google.com/uc?export=download&id=1RpmcVph-HPidpxulkwfeYPEt3d2B63Mr) |
 |:-----------------------------:|:-----------------------:|:-------------------------:|:----------------------------:|:-------------------------:|:-------------------------:|
 | [Jordan Matus](https://www.linkedin.com/in/jordanmatus/) <br> Project Manager | [Anthony Galassi](https://www.linkedin.com/in/anthonygalassi/) <br> Team Lead | [Denis Khatnyuk](https://www.linkedin.com/in/dkhatnyuk/) <br> Team Member | [Owen Martens](https://www.linkedin.com/in/owen-martens-28239b261/) <br> Team Member | [Jack Switzer](https://www.linkedin.com/in/jack-switzer-ba102418a/) <br> Team Member | [Daryan Fadavi](https://www.linkedin.com/in/daryanfadavi/) <br> Team Member |
 
